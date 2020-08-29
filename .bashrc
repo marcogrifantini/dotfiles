@@ -104,7 +104,7 @@ fi
 
 # some more ls aliases
 alias ll='ls -l'
-alias la='ls -A'
+alias la='ls -laFGh'
 alias l='ls -CF'
 alias em='emacs -nw'
 alias dd='dd status=progress'

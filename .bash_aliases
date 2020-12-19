@@ -21,6 +21,12 @@ alias ln='ln -i'
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
+#20: Pass halt/reboot via sudo
+# reboot / halt / poweroff
+alias reboot='sudo /sbin/reboot'
+alias poweroff='sudo /sbin/poweroff'
+alias halt='sudo /sbin/halt'
+alias shutdown='sudo /sbin/shutdown'
 #21: Control web servers
 # also pass it via sudo so whoever is admin can reload it without calling you #
 alias nginxreload='sudo /usr/local/nginx/sbin/nginx -s reload'
@@ -32,3 +38,4 @@ alias httpdtest='sudo /usr/sbin/apachectl -t && /usr/sbin/apachectl -t -D DUMP_V
 #27 Resume wget by default
 ## this one saved by butt so many times ##
 alias wget='wget -c'
+
